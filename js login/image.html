@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rey | Pilih Gambar</title>
+</head>
+<body>
+    <style>
+        *{
+            background-color: rgb(226, 226, 226);
+            margin-top: auto;
+            align-items: center;
+            text-align: center;
+            border-style: solid;
+        }
+    </style>
+    <select name="" id="daftar" onchange="tampil()">
+        <option value="">-Pilih Hewan-</option>
+        <option value="kucing">Kucing</option>
+        <option value="harimau">Harimau</option>
+        <option value="elang">elang</option>
+        <option value="kelinci">Kelinci</option>
+        <option value="panda">Panda</option>
+        <option value="kangguru">Kangguru</option>
+        <option value="kukang">Kukang</option>
+    </select>
+    <div id="hasil"></div>
+
+    <script>
+        let daftar = document.getElementById("daftar")
+        let hasil = document.getElementById("hasil")
+
+        function tampil(){
+            switch (daftar.value) {
+                case "kucing":
+                hasil.innerHTML = '<img src="https://akcdn.detik.net.id/community/media/visual/2020/04/18/d4e3f8b6-a409-4569-9574-d19b5a2130e7.jpeg?q=90&w=480" alt="">'
+                alert("ini adalah gambar Kucing")
+                break;
+
+                case "harimau":
+                hasil.innerHTML = '<img src="https://p4.wallpaperbetter.com/wallpaper/696/522/386/grass-wood-tiger-lazy-wallpaper-preview.jpg" alt="">'
+                alert("ini adalah gambar Harimau")
+                break;
+
+                case "elang":
+                hasil.innerHTML = '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFN-UsUxGjJcOAvJHRcYUdQtnOoKT2q3W7fw&usqp=CAU" alt="">'
+                alert("ini adalah gambar elang")
+                break;
+
+                case "kelinci":
+                hasil.innerHTML = '<img src="https://i2.wp.com/gdmorganic.com/wp-content/uploads/2021/05/kelinci-tidak-mau-makan.jpg" alt="">'
+                alert("ini adalah gambar Kelinci")
+                break;
+
+                case "panda":
+                hasil.innerHTML = '<img src="https://www.ivanruna.my.id/wp-content/uploads/2020/12/Cara-Menghilangkan-Rasa-Malas.jpg" alt="">'
+                alert("ini adalah gambar Panda")
+                break;
+
+                case "kangguru":
+                hasil.innerHTML = '<img src="https://p0.pikist.com/photos/931/1002/kangaroo-cute-animal-animal-cute-mammal-wallaby-australia-wildlife-baby.jpg" alt="">'
+                alert("ini adalah gambar Kangguru")
+                break;
+
+                case "kukang":
+                hasil.innerHTML = '<img src="https://2.bp.blogspot.com/-4SSFZANETT0/WfgXue0UljI/AAAAAAAAERo/zfQe9IvyS4gFmV8ic0XhUaL_EqPg8Mp_wCEwYBhgL/s1600/1a586a76a3886600d311c7ed8beea542.jpg" alt="">'
+                alert("ini adalah gambar Kukang")
+                break;
+
+                default:
+                    hasil.innerHTML =""
+            }
+        }
+    </script>
+</body>
+</html>
