@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let hasil = bil1 + bil2;
+      function hitungPenjumlahan() {
+        const bil1 = document.getElementById('bil1');
+        const bil2 = document.getElementById('bil2');
+        const hasil = document.getElementById('hasil');
+
+        hasil.value = Number(bil1.value) * Number(bil2.value);
+      }
+    </script>
+    <input type="text" id="bil1" value="0" onchange="hitungPenjumlahan()" />
+    <b>+</b>
+    <input type="text" id="bil2" value="0" onchange="hitungPenjumlahan()" />
+    <b>=</b>
+    <input type="text" id="hasil" onchange="hitungPenjumlahan()" />
+  </body>
+</html>
